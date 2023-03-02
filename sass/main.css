@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  font-size: 14px;
+}
+body #card {
+  height: 100vh;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+body #card .product {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body #card .product img {
+  height: 400px;
+  width: 266px;
+}
+body #card .cont {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+body #card .info {
+  height: 400px;
+  width: 266px;
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  color: hsl(228deg, 12%, 48%);
+}
+body #card .info p {
+  font-size: 1rem;
+}
+body #card .info h2 {
+  color: hsl(212deg, 21%, 14%);
+  font-size: 2rem;
+}
+body #card .info .cost {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+body #card .info .cost h3 {
+  color: hsl(158deg, 36%, 37%);
+  font-size: 1.5rem;
+}
+body #card .info .cost h4 {
+  text-decoration: line-through;
+}
+body #card .info .carr {
+  background-color: hsl(158deg, 36%, 37%);
+  padding: 10px;
+  border-radius: 5%;
+  text-align: center;
+}
+body #card .info .carr a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 375px) {
+  body #card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */
